@@ -1,9 +1,29 @@
-function countBasketPrice(product) {
-    var sum = 0;
-    for (var i = 0; i < product.length; i++) {
-        sum += product[i].price;
+var button = document.getElementsByTagName("button");
+var getPrice = function () {
+    for (let i = 0; i < product.length; i++) {
+        button[i].innerHTML = "Купить за " + product[i].price;
     }
-
-    return sum
 }
-console.log(countBasketPrice(product))
+window.onload = getPrice;
+
+function addAmount() {
+    let i = event.target.id;
+    product[i].amount++;
+    getSumm(i);
+}
+
+function get() {
+    button.onclick = addAmount();
+}
+var summ = 0;
+
+function getSumm(i) {
+    summ = summ + product[i].amount * product[i].price;
+    outputSumm();
+}
+
+function outputSumm() {
+    let summBasket = document.getElementById("summ");
+    summBasket.innerHTML = "Сумма покупки = " + summ;
+}
+window.onclick = get;

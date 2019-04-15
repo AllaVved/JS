@@ -1,16 +1,19 @@
 var product = [
     {
-        id: 001,
-        name: 'teddy bear',
-        price: 1500
-    },
-    {
-        id: 002,
+        id: 0,
+        name: 'poodle puppy',
+        price: 1500,
+        amount: 0
+    }
+    , {
+        id: 1,
         name: 'white Lama',
-        price: 8999
-    },
-    {
-        id: 003,
+        price: 8999,
+        amount: 0
+    }
+    , {
+        id: 2,
         name: 'Duck with duckling',
-        price: 10000
-    }]
+        price: 10000,
+        amount: 0
+    }];
