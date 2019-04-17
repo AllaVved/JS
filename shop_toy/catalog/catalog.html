@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Каталог</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script/product.js" defer></script>
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="#.html">Каталог</a>
+                <ul>
+                    <li><a class="catalog" href="poodle_puppy.html">Щенок пуделя</a></li>
+                    <li><a class="catalog" href="white_llama.html">Лама Белая</a></li>
+                    <li><a class="catalog" href="duck_with_duckling.html">Утка с&nbsp;утенком</a></li>
+                </ul>
+            </li>
+            <li><a href="../contacts.html">Контакты</a></li>
+            <li><a href="../registration.html">Регистрация</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="basket">
+            <h1>Корзина</h1>
+            <div id="basket"></div>
+            <h1 id="summ">Пусто</h1>
+        </div>
+        <h1>Каталог</h1>
+        <div class="catalog">
+            <a href="poodle_puppy.html"> <img src="../img/poodle_puppy.jpg" alt="Щенок пуделя">
+                <h3>Щенок пуделя</h3>
+            </a>
+            <button id="button_0" class="addBasket" value="0"></button>
+        </div>
+        <div class="catalog">
+            <a href="white_llama.html"> <img src="../img/white_llama.jpg" alt="Лама Белая">
+                <h3>Лама Белая</h3>
+            </a>
+            <button id="button_1" class="addBasket" value="1"></button>
+        </div>
+        <div class="catalog">
+            <a href="duck_with_duckling.html"> <img src="../img/duck_with_duckling.jpg" alt="Утка с утенком">
+                <h3>Утка с&nbsp;утенком</h3>
+            </a>
+            <button id="button_2" class="addBasket" value="2"></button>
+        </div>
+    </div>
+    <footer>
+        <p>Все права защищены &copy;&nbsp; 2019</p>
+    </footer>
+</body>
+
+</html>
